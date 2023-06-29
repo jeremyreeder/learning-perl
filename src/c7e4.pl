@@ -5,6 +5,6 @@ use autodie;
 
 open INPUT, '<', "resources/c7input.txt";
 
-while ( my $line = <INPUT> ) {
-    print $line if ( $line =~ /\b[A-Z][a-z]+\b/ );
+while ( $_ = <INPUT> ) {
+    print if ( /\b[A-Z][a-z]+\b/ );
 }

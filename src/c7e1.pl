@@ -5,6 +5,6 @@ use autodie;
 
 open INPUT, '<', "resources/c7input.txt";
 
-while ( my $line = <INPUT> ) {
-    print $line if ( $line =~ /\bfred\b/ );
+while ( $_ = <INPUT> ) {
+    print if ( /\bfred\b/ );
 }

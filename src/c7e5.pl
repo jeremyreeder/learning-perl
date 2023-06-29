@@ -5,6 +5,6 @@ use autodie;
 
 open INPUT, '<', "resources/c7input.txt";
 
-while ( my $line = <INPUT> ) {
-    print $line if ( $line =~ /(\S)\1/ );
+while ( $_ = <INPUT> ) {
+    print if ( /(\S)\1/ );
 }
