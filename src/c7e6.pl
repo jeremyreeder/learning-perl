@@ -6,5 +6,5 @@ use autodie;
 open INPUT, '<', "resources/c7input.txt";
 
 while ( $_ = <INPUT> ) {
-    print if (/\bwilma\b/ && /\bfred\b/);
+    print if ( /\bwilma\b/ and /\bfred\b/ );
 }

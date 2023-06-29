@@ -16,3 +16,5 @@ llama
 Fred  Flintstone
 Fred and Wilma are on a date.
 wilma wants to go to a movie, but fred would rather go bowling.
+Dino
+Dino Flintstone
