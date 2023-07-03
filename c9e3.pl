@@ -4,12 +4,12 @@ use utf8;
 use Modern::Perl 2022;
 use autodie;
 
-my $input = $ARGV[0];
-if ( !defined $input ) {
+my $input_filename = $ARGV[0];
+unless ( defined $input_filename ) {
     die "Usage: $0 filename";
 }
 
-open OUTPUT, '>', "$input.out";
+open OUTPUT, '>', "$input_filename.out";
 while ( $_ = <<>> ) {
     s/Fred/\0/ig;
     s/Wilma/Fred/ig;

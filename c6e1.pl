@@ -9,9 +9,9 @@ my %surnames = qw[
   Michael Karr
 ];
 
-open ALTIN, '<', "$ENV{HOME}/ALTIN";
+open STDIN, '<', "$ENV{HOME}/ALTIN";
 
-while ( my $given_name = <ALTIN> ) {
+while ( my $given_name = <STDIN> ) {
     chomp($given_name);
     say "$given_name\'s surname is $surnames{$given_name}.";
 }

@@ -12,6 +12,6 @@ while ( my $word = <STDIN> ) {
     $count{$word}++;
 }
 
-for my $word ( sort (keys %count )) {
+for my $word ( sort ( keys %count ) ) {
     say "$count{$word} x $word";
 }

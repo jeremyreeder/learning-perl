@@ -3,9 +3,9 @@ use utf8;
 use Modern::Perl 2022;
 use autodie;
 
-open INPUT, '<', "resources/c9input.txt";
+open my $input_fh, '<', "resources/c9input.txt";
 
 my $what = 'fred|barney';
-while ( $_ = <INPUT> ) {
+while ( $_ = <$input_fh> ) {
     print if (/(?:$what){3}/);
 }
