@@ -3,9 +3,9 @@ use utf8;
 use Modern::Perl 2022;
 use autodie;
 
-open INPUT, '<', "resources/c7input.txt";
+open my $input_fh, '<', "resources/c07input.txt";
 
-while ( $_ = <INPUT> ) {
+while ( $_ = <$input_fh> ) {
     if (
         /
         (?|

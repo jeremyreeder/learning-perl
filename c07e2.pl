@@ -3,8 +3,8 @@ use utf8;
 use Modern::Perl 2022;
 use autodie;
 
-open my $input_fh, '<', "resources/c7input.txt";
+open my $input_fh, '<', "resources/c07input.txt";
 
 while ( $_ = <$input_fh> ) {
-    print if (/\b[A-Z][a-z]+\b/);
+    print if (/\b[Ff]red\b/);
 }

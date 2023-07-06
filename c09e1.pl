@@ -3,7 +3,7 @@ use utf8;
 use Modern::Perl 2022;
 use autodie;
 
-open my $input_fh, '<', "resources/c9input.txt";
+open my $input_fh, '<', "resources/c09input.txt";
 
 my $what = 'fred|barney';
 while ( $_ = <$input_fh> ) {

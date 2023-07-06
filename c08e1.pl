@@ -4,9 +4,8 @@ use utf8;
 use Modern::Perl 2022;
 use autodie;
 
-open my $input_fh, '<', "resources/c8input.txt";
+open my $input_fh, '<', "resources/c08input.txt";
 
 while ( $_ = <$input_fh> ) {
-    chomp;
-    say "$_ contains '$1'" if (/(\w+a)\b/);
+    print "$`<$&>$'" if (/match/);
 }
